@@ -1,0 +1,196 @@
+/*
+Zuzu Hot or Not CSS
+*/
+
+#zuzu_hot_not {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.zhn-decision-title {
+ font-family: 'Roboto', sans-serif;
+ text-align: center;
+ display: block;
+ padding-bottom: 10px;
+ font-size: 30px;
+ line-height: 1.35em;
+ font-weight: 700;
+ color: #1f1f1f;
+}
+
+
+#zuzu_hot_not ul {
+  list-style: none;
+  text-align: center;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+#zuzu_hot_not li {
+  color: #fff;
+  display: inline-block;
+  padding: 20px 25px;
+  border: 2px solid #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#zuzu_hot_not li.zuzu-hot {
+  background-image: url(../img/bg-hot.png);
+  background-attachment: fixed;
+  background-position: 28% 0;
+  margin-right: 10px;
+}
+
+#zuzu_hot_not li.zuzu-not {
+  background-image: url(../img/bg-not.png);
+  background-attachment: fixed;
+  background-position: 28% 0;
+  margin-left: 10px;
+}
+
+#zuzu_hot_not li.zuzu-hot:hover {
+
+}
+
+#zuzu_hot_not li.zuzu-not:hover {
+
+}
+
+#zuzu_hot_not li a span {
+font-family: 'Roboto', sans-serif;
+font-size: 30px;
+font-weight: 700;
+line-height: 30px;
+color: #fff;
+text-align: center;
+padding-left: 0.3em;
+}
+
+#zuzu_hot_not li a:hover {
+  text-decoration: none;
+}
+
+#zuzu_hot_not li a {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  outline: 0;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#zuzu_hot_not li:hover {
+  cursor: pointer;
+}
+
+#zuzu_hot_not li.clicked {
+  /*filter: grayscale(1);*/
+}
+
+#zuzu_hot_not li:active {
+  position: relative;
+  top: 2px;
+}
+
+#zuzu_hot_not em {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#zuzu_hot_not li.zuzu-hot em:before {
+  content: '\f00c';
+  padding-right: 0.3em;
+  font-family: 'FontAwesome';
+  speak: none;
+}
+
+#zuzu_hot_not li.zuzu-not em:before {
+  content: '\f00d';
+  padding-right: 0.3em;
+  font-family: 'FontAwesome';
+  speak: none;
+}
+
+#zuzu_hot_not li:hover em {
+
+}
+
+.zuzu-or-word {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #999;
+    border-bottom: 4px solid #999;
+}
+
+#zuzu_hot_not_shares {
+  max-height: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+#zuzu_hot_not_shares.showshares {
+  margin-top: 30px;
+  max-height: 500px;
+}
+
+#zuzu_hot_not_shares a {
+  display: inline-block;
+  margin: 4px 2px;
+  background: #3b5998;
+  color: #fff;
+  padding: 0 10px 1px;
+  line-height: 44px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: normal;
+  text-transform: none;
+}
+
+
+#zuzu_hot_not_shares img {
+  height: 32px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+  display: inline;
+}
+
+#zuzu_hot_not_shares a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+
+/* PHONE VERSION */
+@media only screen and (max-width: 500px) {
+
+    #zuzu_hot_not li {
+      display: block;
+    }
+    #zuzu_hot_not li.zuzu-hot,
+    #zuzu_hot_not li.zuzu-not{
+      margin:0;
+    }
+    p.zuzu-or-word{
+      margin: 10px 0 !important;;
+    }
+}
